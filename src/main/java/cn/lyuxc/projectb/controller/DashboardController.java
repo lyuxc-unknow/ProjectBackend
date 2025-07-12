@@ -1,6 +1,5 @@
 package cn.lyuxc.projectb.controller;
 
-import cn.lyuxc.projectb.utils.LogUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -35,8 +34,7 @@ public class DashboardController {
             result.add(Map.of("title","内存总量", "value", totalMemory / (1024 * 1024) + "MiB"));
             result.add(Map.of("title", "已使用内存总量","value", usedMemory / (1024 * 1024) + "MiB"));
         }
-        log.info(LogUtils.mapListToString(result).toString());
-//        log.info(result.toString());
+//        log.info(LogUtils.mapListToString(result).toString());
         return result;
     }
 }
