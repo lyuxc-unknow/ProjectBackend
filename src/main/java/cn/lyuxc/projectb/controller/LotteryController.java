@@ -1,9 +1,7 @@
 package cn.lyuxc.projectb.controller;
 
 import cn.lyuxc.projectb.dto.DrawRequest;
-import cn.lyuxc.projectb.dto.LotteryResult;
 import cn.lyuxc.projectb.entity.LotteryPool;
-import cn.lyuxc.projectb.models.Pool;
 import cn.lyuxc.projectb.repository.LotteryPoolRepository;
 import cn.lyuxc.projectb.service.LotteryService;
 import org.springframework.http.HttpStatus;
@@ -15,7 +13,6 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/lottery")
-//@CrossOrigin // 允许跨域，视部署情况添加
 public class LotteryController {
 
     private final LotteryService lotteryService;
