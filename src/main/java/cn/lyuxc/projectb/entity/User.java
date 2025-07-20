@@ -11,7 +11,9 @@ import lombok.Setter;
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // MySQL 必须使用 IDENTITY
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Getter
+    @Setter
     private Long id;
     
     @Getter
