@@ -14,6 +14,7 @@ import java.time.LocalDateTime;
 @Table(name = "user_tokens")
 @NoArgsConstructor
 public class UserToken {
+
     @Id
     @Column(unique = true, nullable = false)
     @Getter
