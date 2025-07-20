@@ -50,7 +50,6 @@ public class FileController {
         }
     }
 
-    //TODO: 更换更合适的方式来去除警告提示
     @GetMapping("/download")
     public ResponseEntity<Resource> downloadFile(@RequestParam("filename") String filename) {
         try {
