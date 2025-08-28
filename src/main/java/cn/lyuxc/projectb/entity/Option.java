@@ -32,10 +32,6 @@ public class Option {
 
     public Option() {}
 
-    public Option(String optionText) {
-        this.optionText = optionText;
-    }
-
     public void addVote() {
         this.votes++;
     }

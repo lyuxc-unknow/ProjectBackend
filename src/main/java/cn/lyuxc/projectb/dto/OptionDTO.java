@@ -6,9 +6,9 @@ import lombok.Getter;
 @Getter
 public class OptionDTO {
     // getters
-    private Long id;
-    private String optionText;
-    private int votes;
+    private final Long id;
+    private final String optionText;
+    private final int votes;
 
     public OptionDTO(Option option) {
         this.id = option.getId();

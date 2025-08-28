@@ -28,12 +28,4 @@ public class Poll {
 
     public Poll() {}
 
-    public Poll(String title) {
-        this.title = title;
-    }
-
-    public void addOption(Option option) {
-        option.setPoll(this);
-        options.add(option);
-    }
 }

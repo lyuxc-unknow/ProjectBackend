@@ -9,9 +9,9 @@ import java.util.stream.Collectors;
 @Getter
 public class PollDTO {
     // getters
-    private Long id;
-    private String title;
-    private List<OptionDTO> options;
+    private final Long id;
+    private final String title;
+    private final List<OptionDTO> options;
 
     public PollDTO(Poll poll) {
         this.id = poll.getId();
